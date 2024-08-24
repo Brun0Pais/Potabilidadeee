@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purificação com Água Sanitária</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Cor de fundo suave */
+            color: #333; /* Cor do texto principal */
+        }
+
+        /* Estilização do cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+        }
+        header img {
+            width: 100%; /* Faz com que a imagem do cabeçalho ocupe 100% da largura da tela */
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 1200px; /* Limita a largura máxima da imagem */
+            margin: 0 auto; /* Centraliza a imagem */
+            display: block; /* Garante que a imagem seja tratada como um bloco */
+        }
+
+        /* Estilização da barra de navegação */
+        nav {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 0.8rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilização do container principal */
+        .container {
+            width: 90%;
+            max-width: 1200px; /* Limita a largura máxima do container */
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* Fundo branco */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+            border-radius: 30px; /* Cantos arredondados */
+            margin-top: 20px; /* Espaço acima do container */
+            margin-bottom: 50px; /* Espaço abaixo do container */
+        }
+
+        /* Estilização das seções */
+        .section {
+            margin-bottom: 40px; /* Espaço entre as seções */
+            padding-bottom: 20px; /* Espaço abaixo de cada seção */
+        }
+        .section h2 {
+            color: #333; /* Cor do título das seções */
+            padding-bottom: 5px; /* Espaçamento abaixo do título */
+        }
+
+        /* Estilização das imagens */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 100%; /* Ajusta a largura das imagens para 100% do contêiner */
+            max-width: 300px; /* Define a largura máxima das imagens */
+        }
+
+        .text-right {
+            text-align: left;
+            margin-bottom: 20px; /* Espaço abaixo do texto */
+        }
+
+        .important-notice {
+            font-size: 1.5em; /* Tamanho maior do texto */
+            font-weight: bold; /* Texto em negrito */
+            margin-top: 30px; /* Espaço acima do aviso */
+            margin-bottom: 20px; /* Espaço abaixo do aviso */
+        }
+
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+            nav a {
+                padding: 0 0.5rem;
+                margin: 0 0.25rem;
+            }
+            .container {
+                padding: 10px;
+                margin: 10px;
+            }
+            .important-notice {
+                font-size: 1.2em; /* Reduz o tamanho da fonte em telas menores */
+            }
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+            position: relative; /* Necessário para a linha de separação */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Linha de separação entre os itens do menu */
+        nav a::after {
+            content: "|";
+            color: #fff;
+            position: absolute;
+            right: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        /* Remove a linha de separação do último item do menu */
+        nav a:last-child::after {
+            display: none;
+        }
+
+        /* Remove a linha de separação entre "Página Inicial" e os demais itens */
+        nav a:first-child + a::before {
+            content: "";
+            display: none;
+        }
+        @media (max-width: 480px) {
+            nav a {
+                display: block; /* Torna os links da navegação em blocos para melhor visualização em telas muito pequenas */
+                margin: 0.5rem 0;
+            }
+            .image-container img {
+                max-width: 100%; /* Garante que as imagens não ultrapassem a largura da tela */
+            }
+            .important-notice {
+                font-size: 1.1em; /* Reduz ainda mais o tamanho da fonte */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../Home page/Cabeçalho Purificação.png" alt="Cabeçalho Purificação de Água">
+    </header>
+    <nav>
+        <a href="../Home page/index.html">Página Inicial</a>
+        <a href="../Potabilização com pastilha (Danilo)/potcompastilha.html">Potabilização com pastilhas</a>
+        <a href="../Potabilização por fervura (Arthur)/codigo.html">Potabilização com Fervura</a>
+        <a href="../Potabilização com água sánitaria(Victor)/agua.html">Potabilização Com Água Sanitária</a>
+        <a href="../Potabilização por iodo (Bruno)/iodo.html">Potabilização com Iodo</a>
+    </nav>
+    <div class="container">
+        <h1>Purificação com Água Sanitária</h1>
+
+        <section class="section">
+            <h2>O que é purificação com água sanitária?</h2>
+            <div class="text-right">
+                <p>A purificação com água sanitária utiliza hipoclorito de sódio para desinfetar a água, tornando-a segura para consumo. Água sanitária é uma solução de cloro que ajuda a matar microrganismos presentes na água.</p>
+            </div>
+            <div class="image-container">
+                <img src="OIP (1).jpg" alt="Água Sanitária" title="Água Sanitária">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Como purificar água com água sanitária</h2>
+            <div class="text-right">
+                <p><strong>- Adicionar 25 ml de água sanitária(meio copinho de café) e completar com água até fechar 1 litro</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="derramar.jpg" alt="Adicionando Água Sanitária" title="Adicionando Água Sanitária">
+            </div>
+
+            <div class="text-right">
+                <p><strong>- Agite, rotule bem e deixe descansar</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="misturar.jpg" alt="Misturando Água Sanitária" title="Misturando Água Sanitária">
+            </div>
+
+            <div class="text-right">
+                <p><strong>- Essa solução, após diluição, estará a uma concentração de 0,05% (500 ppm ou 500mg de CRL/Litro ), indicada pela OMS.</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="verifircar.jpg" alt="Verificação da Água" title="Verificação da Água">
+            </div>
+        </section>
+
+        <div class="important-notice">
+            Avisos
+        </div>
+        <p>A purificação com água sanitária é eficaz para matar microrganismos, mas não remove contaminantes químicos ou sedimentos. Se a água estiver visivelmente turva ou contaminada com produtos químicos, considere usar métodos adicionais de purificação.</p>
+        <p>Certifique-se de seguir as instruções de diluição adequadas e de deixar a água em contato com o cloro pelo tempo recomendado para garantir a segurança.</p>
+    </div>
+</body>
+</html>

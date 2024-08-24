@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purificação de Água</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 10px;
+        }
+
+        header {
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 0.8rem 0;
+            margin: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: 0;
+            position: relative;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a::after {
+            content: "|";
+            color: #fff;
+            position: absolute;
+            right: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        nav a:last-child::after {
+            display: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: 0 0.5rem;
+            position: relative; /* Necessário para a linha de separação */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Linha de separação entre os itens do menu */
+        nav a::after {
+            content: "|";
+            color: #fff;
+            position: absolute;
+            right: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        /* Remove a linha de separação do último item do menu */
+        nav a:last-child::after {
+            display: none;
+        }
+
+        /* Remove a linha de separação entre "Página Inicial" e os demais itens */
+        nav a:first-child + a::before {
+            content: "";
+            display: none;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #333; /* Alterado para preto */
+            border-bottom: 2px solid #333; /* Alterado para preto */
+            padding-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+            max-width: 300px; /* Limita a largura das imagens */
+            height: auto;
+            display: block;
+            margin: 10px auto; /* Centraliza a imagem */
+        }
+
+        .text-section {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+
+            nav a {
+                display: block;
+                padding: 0.5rem 0;
+                font-size: 14px;
+            }
+
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            footer {
+                padding: 0.5rem 0;
+            }
+
+            .image-section img {
+                max-width: 100%; /* Garante que as imagens não ultrapassem a largura da tela */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                margin-bottom: 15px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            footer {
+                padding: 0.5rem 0;
+            }
+
+            .image-section img {
+                max-width: 100%; /* Garante que as imagens não ultrapassem a largura da tela */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../Home page/Cabeçalho Purificação.png" alt="Cabeçalho Purificação de Água">
+    </header>
+    <nav>
+        <a href="../Home page/index.html">Página Inicial</a>
+        <a href="../Potabilização com pastilha (Danilo)/potcompastilha.html">Potabilização com pastilhas</a>
+        <a href="../Potabilização por fervura (Arthur)/codigo.html">Potabilização com Fervura</a>
+        <a href="../Potabilização com água sánitaria(Victor)/agua.html">Potabilização Com Água Sanitaria</a>
+        <a href="../Potabilização por iodo (Bruno)/iodo.html">Potabilização com Iodo</a>
+    </nav>
+    <div class="container">
+        <h1>Purificação usando pastilhas de cloro</h1>
+        <h3>Informações gerais das pastilhas</h3>
+        <div class="text-section">
+            <p>Cada pastilha é feita com um derivado clorado orgânico e pode tornar potável de 500 ml a 1 litro de água de qualquer fonte, como poços, riachos e mananciais, elas são especialmente adequadas para uso em camping, ecoturismo, caminhadas, atividades náuticas, militares e esportivas ao ar livre. Além disso, não afeta o sabor, o odor ou a cor da água que será consumida.</p>
+        </div>
+        <div class="image-section">
+            <img src="img_pastilha.jpg" alt="Pastilha de cloro" title="Pastilha de cloro">
+        </div>
+        <h3>Modo de uso das pastilhas</h3>
+        <div class="text-section">
+            <p><strong>- Coloque 1 pastilha em recipiente contendo de 500ml a 1 litro de água</strong></p>
+        </div>
+        <div class="image-section">
+            <img src="img_agua.jpg" alt="Colocando pastilha na água" title="Colocando pastilha na água">
+        </div>
+        <div class="text-section">
+            <p><strong>- Aguarde 15 minutos</strong></p>
+        </div>
+        <div class="image-section">
+            <img src="img_15minutos.jpg" alt="Aguardando 15 minutos" title="Aguardando 15 minutos">
+        </div>
+        <div class="text-section">
+            <p><strong>- Está pronta para beber!</strong></p>
+        </div>
+        <div class="image-section">
+            <img src="img_copo_d_água.jpg" alt="Água pronta para beber" title="Água pronta para beber">
+        </div>
+        <h1>Avisos!!!</h1>
+        <p>As pastilhas purificadoras não tratam água contaminada com protozoários ou produtos químicos.</p>
+        <p>As pastilhas de iodo geralmente não são recomendadas para mulheres grávidas e pessoas com alergia a frutos do mar.</p>
+        <p>As pastilhas têm data de validade, verifique-as sempre antes de usá-las.</p>
+    </div>
+
+</body>
+</html>
